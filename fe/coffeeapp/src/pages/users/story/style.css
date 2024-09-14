@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Đặt hướng các phần tử con thành cột (dọc) */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+}
+.container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #2f2019;
+
+  font-family: "BeauLuloClean-OneBold";
+}
+.container img {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.container p {
+  font-family: "NittiTypewriter", Arial, sans-serif;
+  color: #232323;
+}

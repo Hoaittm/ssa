@@ -1,0 +1,46 @@
+.post {
+  border-top: 1px solid #eeeeee;
+}
+.post.container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.row {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.box {
+  width: 350px;
+  background-color: #eeeeee;
+  padding: 20px;
+}
+.box h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+.box img {
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: -5px;
+}
+.img-hover {
+  transition: transform 0.3 ease;
+}
+.img-hover:hover {
+  transform: scale(1.1);
+}
+.box p {
+  text-align: center;
+}
+
+.email {
+  padding: 10px;
+}
+.btn-xem-them {
+  width: 1000px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
