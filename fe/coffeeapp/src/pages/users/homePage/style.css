@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
+.col-md-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.banner {
+  position: relative;
+  margin-top: 50px;
+
+  width: fit-content; /* Kích thước vừa với nội dung */
+  background-color: rgb(252, 232, 195, 0.7); /* Màu nền ban đầu */
+
+  transition: background-color 0.5s ease; /* Hiệu ứng mượt khi hover */
+}
+
+.banner.banner1 a img {
+  width: 1000px; /* Chiều rộng cố định của hình ảnh */
+  display: block;
+  opacity: 0.3; /* Hình ảnh mờ đi nhờ opacity 50% */
+  transition: opacity 0.5s ease; /* Hiệu ứng mờ dần khi hover */
+}
+
+/* Chữ span ban đầu */
+.banner.banner1 a span {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold; /* Độ m�� của chữ */
+  color: #5f5447; /* Màu chữ */
+  opacity: 1;
+  visibility: visible; /* Chữ luôn hiển thị */
+  transition: opacity 0.5s ease; /* Hiệu ứng chuyển mượt */
+  top: 50%; /* Canh giữa chiều dọc */
+  left: 50%; /* Canh giữa chiều ngang */
+  transform: translate(-50%, -50%); /* Đảm bảo chữ nằm ở giữa */
+}
+
+/* Khi hover vào banner */
+.banner.banner1:hover {
+  background-color: transparent; /* Làm trong suốt nền khi hover */
+}
+
+.banner.banner1:hover a img {
+  opacity: 1; /* Hiển thị hình ảnh khi hover */
+}
+
+.banner.banner1:hover a span {
+  opacity: 1; /* Chữ vẫn giữ nguyên, không bị mờ đi */
+  background-color: #ecdec1;
+  cursor: pointer;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 150px;
+  gap: 0;
+  width: 1000px;
+}
+.banner2 {
+  position: relative; /* Để thẻ span có thể đè lên thẻ img */
+  display: inline-block; /* Đảm bảo thẻ bao quanh chỉ vừa với nội dung */
+}
+
+.banner2 img {
+  display: block;
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của thẻ chứa */
+}
+
+.banner2 span {
+  position: absolute; /* Đặt span vào vị trí tuyệt đối so với thẻ chứa */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  left: 50%; /* Căn giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Di chuyển để span hoàn toàn nằm giữa */
+  color: #505455; /* Màu chữ tùy chỉnh để dễ thấy trên hình ảnh */
+  font-size: 1.5rem; /* Tùy chỉnh kích thước chữ */
+  font-weight: bold; /* Tùy chỉnh độ đậm của chữ */
+  z-index: 10; /* Đảm bảo span nằm trên ảnh */
+  background-color: #fbedd0;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+.banner2 span:hover {
+  transform: translate(-50%, -60%); /* Chuyển vị trí khi hover */
+  cursor: pointer;
+}
+.banner3 {
+  position: relative; /* Để thẻ span có thể đè lên thẻ img */
+  display: inline-block; /* Đảm bảo thẻ bao quanh chỉ vừa với nội dung */
+}
+
+.banner3 img {
+  display: block;
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của thẻ chứa */
+}
+
+.txtLeft {
+  position: absolute; /* Đặt span vào vị trí tuyệt đối so với thẻ chứa */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  left: 0; /* Bắt đầu từ phía bên trái */
+  transform: translateY(-50%); /* Chỉ căn giữa theo chiều dọc */
+  color: #505455; /* Màu chữ tùy chỉnh để dễ thấy trên hình ảnh */
+  /* Tùy chỉnh kích thước chữ */
+  /* Tùy chỉnh độ đậm của chữ */
+  z-index: 10; /* Đảm bảo span nằm trên ảnh */
+  background-color: rgb(252, 232, 195, 0.9);
+  padding: 30px;
+  align-items: center;
+  height: 100%;
+  width: 50%; /* Điều chỉnh chiều rộng dựa trên nội dung */
+  text-align: center;
+  animation-fill-mode: forwards;
+}
+.txtLeft h3 {
+  font-weight: bold;
+  line-height: 50px;
+  border-bottom: 4px solid #505455;
+}
+.txtLeft p {
+  font-size: 1.5em;
+}
+.txtLeft:hover {
+  animation: mymove 1s ease forwards;
+  /* Chỉ chạy animation khi hover */
+  cursor: pointer;
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 480px;
+  }
+}
+.txtLeft1 {
+  position: absolute; /* Đặt span vào vị trí tuyệt đối so với thẻ chứa */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  left: 50%; /* Bắt đầu từ phía bên trái */
+  transform: translateY(-50%); /* Chỉ căn giữa theo chiều dọc */
+  color: #505455; /* Màu chữ tùy chỉnh để dễ thấy trên hình ảnh */
+  /* Tùy chỉnh kích thước chữ */
+  /* Tùy chỉnh độ đậm của chữ */
+  z-index: 10; /* Đảm bảo span nằm trên ảnh */
+  background-color: rgb(252, 232, 195, 0.9);
+  padding: 15px;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, color 0.3s ease;
+  width: 50%; /* Điều chỉnh chiều rộng dựa trên nội dung */
+  text-align: center;
+}
+.txtLeft1 h3 {
+  font-weight: bold;
+  line-height: 40px;
+  border-bottom: 4px solid #505455;
+}
+.txtLeft1 p {
+  font-size: 1.2em;
+}
+.txtLeft1:hover {
+  transform: translate(-50%, -60%); /* Chuyển vị trí khi hover */
+  cursor: pointer;
+}
+.col-sm-3 h3 {
+  font-size: 1em;
+  color: #3c5e2c;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Lumanosimo", cursive;
+  font-weight: bold;
+}
+.column li a {
+  color: #232323;
+  font-size: 16px;
+  padding: 3px;
+  margin-left: -18%;
+  display: inline-block;
+  text-decoration: none;
+  transform: translate(-0%, -18%);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.column li a:hover {
+  color: #3c5e2c;
+  transform: translate(0%, -30%); /* Chuyển vị trí khi hover */
+  cursor: pointer;
+}

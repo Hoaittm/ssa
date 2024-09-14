@@ -1,0 +1,47 @@
+.listSocial {
+  border-top: 3px solid #507820;
+}
+
+.listSocial h3 {
+  color: #415d33;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: "Luckiest Guy";
+  margin-top: 20px;
+}
+.listSocial_C a {
+  padding-right: 20px;
+  color: #507820;
+}
+.socialLeft img {
+  width: 30%;
+  margin-left: -15px;
+}
+.txt1 {
+  border: 1px solid #ccc;
+  color: #ccc;
+  padding: 5px;
+}
+.txt2 {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #3c5e2c;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #3c5e2c;
+}
+
+.footer_bottom {
+  background-color: #4d5b2a;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer_bottom p {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 10px;
+}

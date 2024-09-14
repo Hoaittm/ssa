@@ -1,0 +1,142 @@
+.product h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.product img {
+  width: 650px;
+
+  margin-top: -190px;
+}
+.first_content {
+  background-image: url("./../../../assets/users/images/product/bg1.jpg");
+
+  position: relative; /* Để làm cho phần second_content chồng lên first_content */
+  z-index: 1; /* Đặt z-index thấp hơn để nó ở dưới */
+  background-size: cover;
+  background-position: center;
+}
+
+.second_content {
+  background: linear-gradient(to bottom, #ffffff, #cceeff);
+
+  position: absolute; /* Chồng lên first_content */
+  top: -160px; /* Đặt vị trí chồng lên */
+  width: 100%; /* Đảm bảo chiều rộng full */
+  z-index: 2; /* Đặt z-index cao hơn để second_content nằm trên */
+}
+.thirt_content {
+  background: linear-gradient(to bottom, #ffffff, #cceeff);
+  position: absolute; /* Chồng lên first_content */
+  top: -270px; /* Đặt vị trí chồng lên */
+  width: 100%; /* Đảm bảo chiều rộng full */
+  z-index: 3; /* Đặt z-index cao hơn để second_content nằm trên */
+}
+.four_content {
+  background: linear-gradient(to bottom, #ffffff, #cceeff);
+  position: absolute; /* Chồng lên first_content */
+  top: -390px; /* Đặt vị trí chồng lên */
+  width: 100%; /* Đảm bảo chiều rộng full */
+  z-index: 4;
+}
+/* Cấu hình chung cho từng đoạn nội dung */
+.finally_content {
+  background: linear-gradient(to left, #ffffff, #ffd400);
+
+  top: -500px;
+  position: relative;
+  z-index: 5; /* Để dưới các phần khác */
+}
+
+/* Phần chung cho từng đoạn nội dung */
+.first_content,
+.second_content,
+.thirt_content,
+.four_content,
+.finally_content {
+  min-height: 400px; /* Đặt chiều cao tối thiểu, có thể điều chỉnh */
+  position: relative; /* Giữ trong luồng tài liệu */
+  /* Đảm bảo khoảng cách bên dưới mỗi phần */
+}
+
+.product.row {
+  display: flex;
+  align-items: center;
+}
+
+.product.text {
+  padding: 20px;
+}
+
+.product.text h1 {
+  color: #b51f24; /* Màu chủ đạo cho tiêu đề */
+}
+
+.product.text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Điều chỉnh flex để xen kẽ hình ảnh và văn bản */
+.first_content .row,
+.finally_content .row {
+  flex-direction: row;
+}
+
+.second_content .row {
+  flex-direction: row-reverse; /* Đảo chiều để hình ảnh ở bên trái */
+}
+.four_content .row {
+  flex-direction: row-reverse; /* Đảo chiều để hình ảnh ở bên trái */
+}
+
+/* Responsive cho các thiết bị di động */
+/* @media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .text {
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+} */
+.text {
+  margin: 50px;
+}
+.first_content h1 {
+  color: #fff;
+}
+.first_content p {
+  color: #fff;
+}
+.first_content .btn-link {
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.card img {
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+}
+
+.card img:hover {
+  content: url("../../../assets/users/images/header/2.png");
+  transform: scale(1.5); /* Hình ảnh khác khi hover */
+}
